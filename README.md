@@ -106,7 +106,7 @@ TEAM WEEKLY REPORTでは、一週間を通してチーム内のメンバーの�
 
 ## 資料
 - [日報ジェネレーターgithub](https://github.com/YNSTakeru/nippou)
-
+- [チーム開発 DEV1](https://github.com/APPRENTICE-jp/apprentice/blob/4th/curriculum/TEAM_DEV_1.md)
 
 ## 導入する環境
 
