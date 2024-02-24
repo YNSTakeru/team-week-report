@@ -86,6 +86,12 @@ TEAM WEEKLY REPORTでは、一週間を通してチーム内のメンバーの�
         - [ ] 日報を投稿するとメンバーにはSCOREが加算される
             - [ ] メンバーの日報に記載された学習時間を取得しSCOREに加算する
             - [ ] チェックボックスの有無でSCOREに加算する
+- [ ] ヘッダーに各種リンクを表示する
+    - [ ] 日報作成ページ
+    - [ ] 自身の日報一覧ページ
+    - [ ] チーム一覧ページ
+    - [ ] 登録/ログインページ
+        - [ ] ログイン後は表示しない
 
 
 ### あれば嬉しい
@@ -106,7 +112,7 @@ TEAM WEEKLY REPORTでは、一週間を通してチーム内のメンバーの�
 
 ## 資料
 - [日報ジェネレーターgithub](https://github.com/YNSTakeru/nippou)
-
+- [チーム開発 DEV1](https://github.com/APPRENTICE-jp/apprentice/blob/4th/curriculum/TEAM_DEV_1.md)
 
 ## 導入する環境
 
