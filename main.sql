@@ -4,6 +4,17 @@
 create database team_weakly_report;
 use team_weakly_report;
 
+/*
+progressは0~100で、100になったら完了とする
+tasksテーブルのprogressから集計する
+ */
+CREATE TABLE projects (
+    id INT PRIMARY KEY,
+    title VARCHAR(128) NOT NULL,
+    content TEXT NOT NULL,
+    progress INT DEFAULT 0 NOT NULL,
+    created_at TIMESTAMP
+);
 
 CREATE TABLE users (
     id INT PRIMARY KEY,
@@ -21,15 +32,19 @@ statusを設定することで、お気に入りのタスクだったり、救�
 CREATE TABLE tasks (
     user_id INT,
     id INT,
+    project_id INT,
     date DATE NOT NULL,
     learning_time INT NOT NULL,
     title VARCHAR(128) NOT NULL,
     content TEXT,
     status VARCHAR(32) DEFAULT 'normal' NOT NULL,
+    progress INT DEFAULT 0 NOT NULL,
     created_at TIMESTAMP,
     PRIMARY KEY (user_id, id),
-    FOREIGN KEY (user_id) REFERENCES users (id)
+    FOREIGN KEY (user_id) REFERENCES users (id),
+    FOREIGN KEY (project_id) REFERENCES projects (id)
 );
+
 
 /* scoreの範囲は5段階？ 1~5 */
 
