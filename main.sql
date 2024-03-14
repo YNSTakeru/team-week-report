@@ -52,7 +52,7 @@ CREATE TABLE comments (
     を管理するテーブル
  */
 
-CREATE TABLE read_comments(
+CREATE TABLE status_comments(
     user_id INT,
     task_user_id INT,
     task_id INT,
